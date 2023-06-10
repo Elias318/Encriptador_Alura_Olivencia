@@ -1,0 +1,707 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html{
+    background-color: #E5E5E5;
+}
+
+/* MOBILE */
+@media only screen and (max-width:767px) {
+    .contenedorLogo{
+        display: block;
+        padding-top: 30px;
+        padding-left: 70px;
+        width: 100%;
+        height: 96px;
+        left: 0px;
+        top: 0px;
+    }
+    .cContenedorTexto{
+        display: flex;
+        justify-content: center;
+    }
+    .contenedorTexto{
+        display: block;
+       text-align: center;
+       text-transform: lowercase;
+        width: 443px;
+        height: 300px;
+        background: #E5E5E5;
+        margin-left: 16px ;
+        margin-right: 16px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        color: #0A3871;
+        resize: none;
+        border: none;
+    }
+    .contenedorTexto::placeholder{color: #0A3871;}
+    .contenedorTexto:focus{
+        outline: none;
+    }
+
+
+    .contenedorGrande{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contenedorRequisitos{
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        text-align: center;
+        
+    }
+    .imagenAdmiracion{
+        margin-right: 10px;
+    }
+
+    .contenedorBotones{
+        display: block;
+        margin-top: 75px;
+       
+      
+        height: auto;
+    }
+    .contenedorBotonEncriptar{
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .botonEncriptar{
+        padding: 24px;
+        gap: 8px;
+
+        width: 343px;
+        height: 67px;
+
+        /* Dark blue/dark-blue-300 */
+
+        background: #0A3871;
+        border-radius: 24px;
+
+       
+
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+        cursor: pointer;
+    }
+    .textoEncriptar{
+        width: 295px;
+        height: 19px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #FFFFFF;
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+    }
+    .contenedorBotonDesencriptar{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .botonDesencriptar{
+        box-sizing: border-box;
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 8px;
+
+        width: 343px;
+        height: 67px;
+
+        /* Dark blue/dark-blue-300 */
+
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+        cursor: pointer;
+    }
+
+    .textoDesencriptar{
+        width: 295px;
+        height: 19px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+
+        /* Dark blue/dark-blue-300 */
+
+        color: #0A3871;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+    }
+    .contenedorMostrador{
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+        
+    }
+    .mostradorTexto{
+        font-size: 24px;
+        width: 427px;
+        height: 300px;
+        resize: none;
+        padding: 32px;
+        gap: 32px;
+        background: #FFFFFF;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+    }
+    .mostradorTexto::placeholder{color: #343A40;}
+    .contenedorBtnCopiar{
+        margin-top: 10px;
+        cursor: pointer;
+        position: relative;
+        bottom: 90px;
+    }
+    
+    .btnCopiar{
+        background: #FFFFFF;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        
+        border-radius: 24px;
+        width: 336px;
+        height: 67px;
+        }
+    
+
+    /* PARA VISTA DESKTOP */
+
+    .contenedroTextoConMostrador{
+        display: none;
+
+    }
+    .contenedorTextoDesktop{
+        display: none;
+    }
+   
+    .contenedorRequisitosDesktop{
+     display: none;
+    }
+    .contenedorBotonesDesktop{
+        display: none;
+    }
+    .contenedorBotonEncriptarDesktop{
+        
+       display: none;
+    }
+    .botonEncriptarDesktop{
+        
+       display: none;
+    }
+    .textoEncriptarDesktop{
+       display: none;
+    }
+    .contenedorBotonDesencriptarDesktop{
+      display: none;
+    }
+    .botonDesencriptarDesktop{
+        display: none;
+    }
+
+    .textoDesencriptarDesktop{
+        display: none;
+    }
+    .contenedorMostradorDesktop{
+        display: none;
+    }
+    .mostradorTextoDesktop{
+       display: none;
+    }
+    
+}
+
+
+
+/* TABLET */
+@media only screen and (min-width:767px) and (max-width:1024px) {
+   
+
+    .contenedorLogo{
+        display: block;
+        padding-top: 30px;
+        padding-left: 70px;
+        width: 100%;
+        height: 96px;
+        left: 0px;
+        top: 0px;
+    }
+
+    .cContenedorTexto{
+        display: flex;
+        justify-content: center;
+    }
+    .contenedorTexto{
+        display: block;
+       text-align: center;
+       text-transform: lowercase;
+        width: 343px;
+        height: 48px;
+        background: #E5E5E5;
+        margin-left: 16px ;
+        margin-right: 16px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        color: #0A3871;
+        resize: none;
+        border: none;
+    }
+    ::placeholder{color: #0A3871;}
+    .contenedorTexto:focus{
+        outline: none;
+    }
+
+    .contenedorGrande{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contenedorRequisitos{
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        text-align: center;
+        
+    }
+    .imagenAdmiracion{
+        margin-right: 10px;
+    }
+
+    .contenedorBotones{
+        display: block;
+        
+        margin-top: 75px;
+       
+      
+        height: auto;
+    }
+    .contenedorBotonEncriptar{
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .botonEncriptar{
+        padding: 24px;
+        gap: 8px;
+
+        width: 332px;
+        height: 67px;
+
+        /* Dark blue/dark-blue-300 */
+
+        background: #0A3871;
+        border-radius: 24px;
+
+       
+
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+        cursor: pointer;
+    }
+    .textoEncriptar{
+        width: 295px;
+        height: 19px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #FFFFFF;
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+    }
+    .contenedorBotonDesencriptar{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .botonDesencriptar{
+        box-sizing: border-box;
+        
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 8px;
+
+        width: 332px;
+        height: 67px;
+
+        /* Dark blue/dark-blue-300 */
+
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+        cursor: pointer;
+    }
+
+    .textoDesencriptar{
+        width: 295px;
+        height: 19px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+
+        /* Dark blue/dark-blue-300 */
+
+        color: #0A3871;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+    }
+
+    .contenedorMostrador{
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+        
+    }
+    .mostradorTexto{
+        font-size: 24px;
+        width: 688px;
+        height: 333px;
+        resize: none;
+        padding: 32px;
+        gap: 32px;
+        background: #FFFFFF;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+    }
+    .contenedorBtnCopiar{
+        position: relative;
+        bottom: 100px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    .btnCopiar{
+        background: #FFFFFF;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 24px;
+        width: 336px;
+        height: 67px;
+        }
+
+
+    /* PARA VISTA DESKTOP */
+
+
+    .contenedroTextoConMostrador{
+        display: none;
+
+    }
+    .contenedorTextoDesktop{
+        display: none;
+    }
+   
+    .contenedorRequisitosDesktop{
+     display: none;
+    }
+    .contenedorBotonesDesktop{
+        display: none;
+    }
+    .contenedorBotonEncriptarDesktop{
+        
+       display: none;
+    }
+    .botonEncriptarDesktop{
+        
+       display: none;
+    }
+    .textoEncriptarDesktop{
+       display: none;
+    }
+    .contenedorBotonDesencriptarDesktop{
+      display: none;
+    }
+    .botonDesencriptarDesktop{
+        display: none;
+    }
+
+    .textoDesencriptarDesktop{
+        display: none;
+    }
+    .contenedorMostradorDesktop{
+        display: none;
+    }
+    .mostradorTextoDesktop{
+       display: none;
+    }
+    
+
+
+
+}
+/* DESKTOP */
+@media only screen and (min-width:1024px){
+
+    .contenedorLogo{
+        display: block;
+        padding-top: 30px;
+        padding-left: 70px;
+        width: 100%;
+        height: 96px;
+        left: 0px;
+        top: 0px;
+    }
+    .cContenedorTexto{
+        display: none;
+
+    }
+    .contenedroTextoConMostrador{
+        width: 100%;
+        height: 750px;
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .contenedorTextoDesktop{
+        display: block;
+        text-align: center;
+        text-transform: lowercase;
+        padding-top: 20px;
+        width: 1000px;
+        height: 50%;
+        background: #E5E5E5;
+        color: #0A3871;
+        margin-left: 16px ;
+        margin-right: 16px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        resize: none;
+        border: none;
+    }
+    ::placeholder{color: #0A3871;}
+    .contenedorTexto:focus{
+        outline: none;
+    }
+    .contenedorGrande{
+        display: none;
+    }
+    .contenedorRequisitosDesktop{
+        display: flex;
+        padding-left: 150px;
+        margin: 20px;
+    }
+    .contenedorBotonesDesktop{
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        
+        margin-top: 50px;
+       
+      
+        height: 40px;
+    }
+    .imagenAdmiracion{
+        margin-right: 10px;
+    }
+    .contenedorBotonEncriptarDesktop{
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .botonEncriptarDesktop{
+        
+        gap: 8px;
+
+        width: 332px;
+        height: 67px;
+
+        /* Dark blue/dark-blue-300 */
+
+        background: #0A3871;
+        border-radius: 24px;
+
+       margin-right: 30px;
+
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+        cursor: pointer;
+    }
+    .textoEncriptarDesktop{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #FFFFFF;
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+    }
+    .contenedorBotonDesencriptarDesktop{
+        display: flex;
+        justify-content: center;
+    }
+    .botonDesencriptarDesktop{
+        box-sizing: border-box;
+        
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 8px;
+
+        width: 332px;
+        height: 67px;
+
+        /* Dark blue/dark-blue-300 */
+
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+        cursor: pointer;
+    }
+
+    .textoDesencriptarDesktop{
+        width: 295px;
+        height: 19px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+
+        /* Dark blue/dark-blue-300 */
+
+        color: #0A3871;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+    }
+    .contenedorMostradorDesktop{
+        margin: 5px;
+        width: 400px;
+        height: 844px;
+        display: block;
+        text-align: center;
+        
+    }
+    .mostradorTextoDesktop{
+        font-size: 24px;
+        width: 100%;
+        height: 100%;
+        padding-top: 20px;
+        text-align: center;
+        resize: none;
+        color: #495057;
+        background: #FFFFFF;
+        background-image: url("../images/Muñeco.png") ;
+        background-position: center;
+        background-repeat: no-repeat;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+
+    }
+    .mostradorTextoDesktop::placeholder{
+        color: #495057;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+    }
+
+    .contenedorBtnCopiarDesktop{
+        position: relative;
+        bottom: 100px;
+    }
+    
+    .btnCopiarDesktop{
+        width: 336px;
+        height: 67px;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        cursor: pointer;
+        box-sizing: border-box;
+
+    }
+   
+
+}

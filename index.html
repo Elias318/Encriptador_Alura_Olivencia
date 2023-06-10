@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <main>
+        <header class="contenedorLogo">
+            <img class="Logo" src="./images/Vector.png" alt="Logo Alura">
+        </header>
+        
+            
+        <div class="contenedroTextoConMostrador">
+            <div class="cContenedorTextoDesktop">
+                <textarea name="Ingreso de texto"class="contenedorTextoDesktop" placeholder="Ingrese texto aqui"></textarea>
+
+                <section class="contenedorRequisitosDesktop">
+                    <img class="imagenAdmiracion" src="./images/Vector (1).png" alt="Icono de advertencia">
+                   <p>Solo letras minusculas y sin acentos</p> 
+                </section>
+
+                <section class="contenedorBotonesDesktop">
+                
+                    <div class="contenedorBotonEncriptarDesktop">
+                        <button type="button" class="botonEncriptarDesktop" onclick="btnEncriptarDesktop()"> <div class="textoEncriptarDesktop"> Encriptar </div> </button>
+                
+                    </div>
+                
+                
+                     <div class="contenedorBotonDesencriptarDesktop">
+                        <button type="button" class="botonDesencriptarDesktop"onclick="btnDesencriptarDesktop()"> <div class="textoDesencriptarDesktop"> Desencriptar </div> </button>
+                    </div>
+                </section>
+                
+            </div>
+
+            
+
+            <div class="contenedorMostradorDesktop">
+
+                <textarea class="mostradorTextoDesktop" placeholder="Ningun mensaje fue encotrado" ></textarea>
+                
+                <div class="contenedorBtnCopiarDesktop">
+                    <button class="btnCopiarDesktop" onclick="copiarAlPortapapelesDesktop()">Copiar</button>
+                </div>
+                
+                
+            </div>
+
+            
+        </div>
+
+
+            <!-- PARA VISTA QUE NO SEA DESKTOP -->
+
+        
+            <div class="cContenedorTexto">
+                <textarea name="Ingreso de texto"class="contenedorTexto" placeholder="Ingrese texto aqui"></textarea>
+
+            </div>
+           
+        
+        
+            <div class="contenedorGrande">
+                <div class="contenedorMostrador">
+
+                    <textarea class="mostradorTexto" placeholder="Ningun mensaje fue encotrado" ></textarea>
+                    
+                    <div class="contenedorBtnCopiar">
+                        <button class="btnCopiar" onclick="copiarAlPortapapeles()">Copiar</button>
+                    </div>
+                    
+                    
+                </div>
+               
+                
+                
+    
+            
+    
+                <section class="contenedorRequisitos">
+                    <img class="imagenAdmiracion" src="./images/Vector (1).png" alt="Icono de advertencia">
+                   <p>Solo letras minusculas y sin acentos</p> 
+                </section>
+    
+                <section class="contenedorBotones">
+                
+                    <div class="contenedorBotonEncriptar">
+                        <button type="button" class="botonEncriptar" onclick="btnEncriptar()"> <div class="textoEncriptar"> Encriptar </div> </button>
+                
+                    </div>
+                
+                
+                     <div class="contenedorBotonDesencriptar">
+                        <button type="button" class="botonDesencriptar"> <div class="textoDesencriptar"> Desencriptar </div> </button>
+                    </div>
+                </section>
+            </div>
+
+            
+
+            
+            
+
+    </main>
+    <script src="./JavaScript/funciones.js"></script>
+</body>
+</html>
